@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model IEnumerable<ExampleProject.Domain.Vehicle>
+<div class="text-center">
+
+    @foreach (var vehicle in Model)
+    {
+        <h1 class="display-4">@vehicle.Color @vehicle.Make @vehicle.Model @vehicle.Registration </h1>
+
+        <p>Is Engine Big: @vehicle.EngineIsBig</p>
+
+    }
+</div>
